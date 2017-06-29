@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_login"
+    android:gravity="center"
+    android:padding="10dp"
+
+
+    tools:context="com.example.omc.tabview.Register">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+        <ImageView
+            android:background="@drawable/wa"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:layout_marginBottom="40dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Warehouse Management"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:layout_marginBottom="20dp"
+            />
+
+
+        <EditText
+
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:hint="@string/hint_name"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/input_login"
+        android:textColorHint="@color/input_login_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextUsername" />
+
+
+    <EditText
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:hint="@string/hint_email"
+        android:padding="10dp"
+        android:textColor="@color/input_login"
+        android:textColorHint="@color/input_login_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextEmail" />
+
+
+    <EditText
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:hint="@string/hint_password"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/input_login"
+        android:textColorHint="@color/input_login_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:password="true"
+        android:id="@+id/editTextPassword" />
+
+    <Button
+        android:background="@color/btn_login_bg"
+        android:text="@string/btn_register"
+        android:textAllCaps="false"
+        android:textColor="@color/btn_login"
+        android:textSize="15dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="0.01"
+
+        android:id="@+id/buttonRegister" />
+
+    <Button
+        android:background="@null"
+        android:text="@string/btn_link_to_login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:id="@+id/buttonLogin"/>
+        </LinearLayout>
+    </ScrollView>
